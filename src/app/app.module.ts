@@ -13,6 +13,9 @@ import {MainViewModule} from "./views/main-view/main-view.module";
 import {MinorViewModule} from "./views/minor-view/minor-view.module";
 import {LoginModule} from "./views/login/login.module";
 import {RegisterModule} from "./views/register/register.module";
+import {TeacherViewModule} from "./views/teacher-view/teacher-view.module";
+import {StudentViewModule} from "./views/student-view/student-view.module";
+
 
 // App modules/components
 import {LayoutsModule} from "./components/common/layouts/layouts.module";
@@ -31,6 +34,8 @@ import {LayoutsModule} from "./components/common/layouts/layouts.module";
     MinorViewModule,
     LoginModule,
     RegisterModule,
+    TeacherViewModule,
+    StudentViewModule,
 
     // Modules
     LayoutsModule,

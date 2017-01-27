@@ -21,6 +21,12 @@
             <li [ngClass]="{active: activeRoute('minorView')}">
                 <a [routerLink]="['/minorView']"><i class="fa fa-desktop"></i> <span class="nav-label">Minor view</span> </a>
             </li>
+            <li [ngClass]="{active: activeRoute('teacherView')}">
+                <a [routerLink]="['/teacherView']"><i class="fa fa-desktop"></i> <span class="nav-label">Teacher view</span></a>
+            </li>
+             <li [ngClass]="{active: activeRoute('studentView')}">
+                <a [routerLink]="['/studentView']"><i class="fa fa-desktop"></i> <span class="nav-label">Student view</span></a>
+            </li>
             <li>
                 <a [routerLink]="['/login']"><i class="fa fa-sign-in"></i> <span class="nav-label">Login</span> </a>
             </li>
