@@ -1,0 +1,37 @@
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="text-center m-t-lg">
+                <h1>
+                    Welcome to Teacher page
+                </h1>
+                <small>This is the war page.</small>
+
+                <div class="row" *ngFor="let teacher of teachers">
+                        <div class="col-lg-12">
+                            <div class="contact-box">
+                                <a href="profile.html">
+                                <div class="col-sm-4">
+                                    <div class="text-center">
+                                        <img alt="image" class="img-circle m-t-xs img-responsive" src= "{{ teacher.pic }}">
+                                        <div class="m-t-xs font-bold">{{ teacher.job }}</div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-8">
+                                    <h3><strong>{{ teacher.first }} {{ teacher.last }}</strong></h3>
+                                    <p><i class="fa fa-map-marker"></i> {{ teacher.localisation }}</p>
+                                    <address>
+                                        <strong>{{ teacher.company }}</strong><br>
+                                        {{ teacher.adresse }}<br>
+                                        {{ teacher.ville }}<br>
+                                        <abbr title="Phone">Tel:</abbr> {{ teacher.tel }}
+                                    </address>
+                                </div>
+                                <div class="clearfix"></div>
+                                    </a>
+                            </div>
+                        </div> 
+                </div>
+        </div>
+    </div>
+</div>

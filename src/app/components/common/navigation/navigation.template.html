@@ -2,37 +2,34 @@
     <div class="sidebar-collapse">
         <ul class="nav metismenu" id="side-menu">
             <li class="nav-header">
-                <div class="dropdown profile-element">
-                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                        <span class="block m-t-xs"> <strong class="font-bold">Example user</strong> </span>
-                        <span class="text-muted text-xs block">Example <b class="caret"></b> </span>
-                    </a>
-                    <ul class="dropdown-menu animated fadeInRight m-t-xs">
-                        <li><a href="#">Logout</a></li>
-                    </ul>
-                </div>
-                <div class="logo-element">
-                    IN+
+                <div>
+                    <img src="../../assets/img/landing/logo/topnavbar1.jpg" alt="Logo GestKaD" height="30" width="30" />
                 </div>
             </li>
-            <li [ngClass]="{active: activeRoute('mainView')}">
-                <a [routerLink]="['/mainView']"><i class="fa fa-th-large"></i> <span class="nav-label">Main view</span></a>
+            <li [ngClass]="{active: activeRoute('Accueil')}">
+                <a [routerLink]="['/Accueil']"><i><img src="../../assets/img/landing/logo/accueil.png" alt="Logo GestKaD" height="30" width="30" /></i> <span class="nav-label">Accueil</span></a>
             </li>
-            <li [ngClass]="{active: activeRoute('minorView')}">
-                <a [routerLink]="['/minorView']"><i class="fa fa-desktop"></i> <span class="nav-label">Minor view</span> </a>
+            <li [ngClass]="{active: activeRoute('materiel')}">
+                <a [routerLink]="['/materiel']"><i><img src="../../assets/img/landing/logo/materiel.png" alt="Logo GestKaD" height="30" width="30" /></i> <span class="nav-label">Matériels</span> </a>
             </li>
-            <li [ngClass]="{active: activeRoute('teacherView')}">
-                <a [routerLink]="['/teacherView']"><i class="fa fa-desktop"></i> <span class="nav-label">Teacher view</span></a>
+            <li [ngClass]="{active: activeRoute('logiciel')}">
+                <a [routerLink]="['/logiciel']"><i><img src="../../assets/img/landing/logo/logiciel.png" alt="Logo GestKaD" height="30" width="30" /></i> <span class="nav-label">Logiciels</span></a>
             </li>
-             <li [ngClass]="{active: activeRoute('studentView')}">
-                <a [routerLink]="['/studentView']"><i class="fa fa-desktop"></i> <span class="nav-label">Student view</span></a>
+            <li [ngClass]="{active: activeRoute('peripherique')}">
+                <a [routerLink]="['/peripherique']"><i><img src="../../assets/img/landing/logo/peripherique.png" alt="Logo GestKaD" height="30" width="30" /></i> <span class="nav-label">Périphérique</span> </a>
             </li>
-            <li>
-                <a [routerLink]="['/login']"><i class="fa fa-sign-in"></i> <span class="nav-label">Login</span> </a>
+            <!-- <li [ngClass]="{active: activeRoute('client')}">
+                <a [routerLink]="['/logiciel']"><i class="fa fa-desktop"><img src="../../assets/img/landing/logo/client.png" alt="Logo GestKaD" height="100" width="100" /></i> <span class="nav-label">Clients</span></a>
+            </li> -->
+             <li [ngClass]="{active: activeRoute('contact')}">
+                <a [routerLink]="['/contact']"><i><img src="../../assets/img/landing/logo/contact.png" alt="Logo GestKaD" height="30" width="30" /></i> <span class="nav-label">Contact</span></a>
+            </li>
+            <!-- <li>
+                <a [routerLink]="['/login']"><i class="fa fa-sign-in"><img src="../../assets/img/landing/logo/accueil.png" alt="Logo GestKaD" height="100" width="100" /></i> <span class="nav-label">login</span> </a>
             </li>
             <li>
                 <a [routerLink]="['/register']"><i class="fa fa-pencil"></i> <span class="nav-label">Register</span> </a>
-            </li>
+            </li> -->
         </ul>
 
     </div>

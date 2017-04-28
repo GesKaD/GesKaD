@@ -1,10 +1,10 @@
 import {NgModule} from "@angular/core";
 import {BrowserModule} from "@angular/platform-browser";
-import {teacherViewComponent} from "./teacher-view.component";
+import {clientComponent} from "./client.component";
 
 @NgModule({
-    declarations: [teacherViewComponent],
+    declarations: [clientComponent],
     imports     : [BrowserModule],
 })
 
-export class TeacherViewModule {}
+export class clientModule {}

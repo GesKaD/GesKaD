@@ -3,7 +3,7 @@
         <div class="col-lg-12">
             <div class="text-center m-t-lg">
                 <h1>
-                    Welcome to Teacher page
+                    LOGICIEL
                 </h1>
                 <small>This is the war page.</small>
 
@@ -13,19 +13,19 @@
                                 <a href="profile.html">
                                 <div class="col-sm-4">
                                     <div class="text-center">
-                                        <img alt="image" class="img-circle m-t-xs img-responsive" src= "{{ teacher.pic }}">
+                                        <img alt="image" src= "{{ teacher.pic }}">
                                         <div class="m-t-xs font-bold">{{ teacher.job }}</div>
                                     </div>
                                 </div>
-                                <div class="col-sm-8" align="text-center">
-                                    <h3><strong>{{ teacher.first }} {{ teacher.last }}</strong></h3>
-                                    <p><i class="fa fa-map-marker"></i> {{ teacher.localisation }}</p>
-                                    <address>
+                                <div class="col-sm-8">
+                                    <h3><strong>{{ teacher.titre }}</strong></h3>
+                                    <p> {{ teacher.texte }}</p>
+                                    <!-- <address>
                                         <strong>{{ teacher.company }}</strong><br>
                                         {{ teacher.adresse }}<br>
                                         {{ teacher.ville }}<br>
                                         <abbr title="Phone">Tel:</abbr> {{ teacher.tel }}
-                                    </address>
+                                    </address> -->
                                 </div>
                                 <div class="clearfix"></div>
                                     </a>

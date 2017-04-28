@@ -9,12 +9,14 @@ import {ROUTES} from "./app.routes";
 import { AppComponent } from './app.component';
 
 // App views
-import {MainViewModule} from "./views/main-view/main-view.module";
-import {MinorViewModule} from "./views/minor-view/minor-view.module";
+import {AccueilModule} from "./views/Accueil/Acceuil.module";
+import {materielModule} from "./views/materiel/materiel.module";
 import {LoginModule} from "./views/login/login.module";
 import {RegisterModule} from "./views/register/register.module";
-import {TeacherViewModule} from "./views/teacher-view/teacher-view.module";
-import {StudentViewModule} from "./views/student-view/student-view.module";
+import {logicielModule} from "./views/logiciel/logiciel.module";
+import {peripheriqueModule} from "./views/peripherique/peripherique.module";
+import {clientModule} from "./views/client/client.module";
+import {contactModule} from "./views/contact/contact.module";
 
 
 // App modules/components
@@ -30,12 +32,14 @@ import {LayoutsModule} from "./components/common/layouts/layouts.module";
     HttpModule,
 
     // Views
-    MainViewModule,
-    MinorViewModule,
+    AccueilModule,
+    materielModule,
     LoginModule,
     RegisterModule,
-    TeacherViewModule,
-    StudentViewModule,
+    logicielModule,
+    peripheriqueModule,
+    clientModule,
+    contactModule,
 
     // Modules
     LayoutsModule,

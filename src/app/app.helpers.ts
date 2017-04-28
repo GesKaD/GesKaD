@@ -38,9 +38,9 @@ export function correctHeight() {
 
 export function detectBody() {
   if (jQuery(document).width() < 769) {
-    jQuery('body').addClass('body-small')
+    jQuery('body').addClass('mini-navbar')
   } else {
-    jQuery('body').removeClass('body-small')
+    jQuery('body').removeClass('mini-navbar')
   }
 }
 
