@@ -5,7 +5,7 @@
                 <h1>
                     LOGICIEL
                 </h1>
-                <small>This is the war page.</small>
+                <small>Gamme CS Clyo Systems.</small>
 
                 <div class="row" *ngFor="let teacher of teachers">
                         <div class="col-lg-12">
@@ -19,13 +19,11 @@
                                 </div>
                                 <div class="col-sm-8">
                                     <h3><strong>{{ teacher.titre }}</strong></h3>
-                                    <p> {{ teacher.texte }}</p>
-                                    <!-- <address>
-                                        <strong>{{ teacher.company }}</strong><br>
-                                        {{ teacher.adresse }}<br>
-                                        {{ teacher.ville }}<br>
-                                        <abbr title="Phone">Tel:</abbr> {{ teacher.tel }}
-                                    </address> -->
+                                    <address>
+                                        <strong>{{ teacher.descript }}</strong><br>
+                                        {{ teacher.compo }}<br>
+                                        {{ teacher.conclu }}<br>
+                                    </address>
                                 </div>
                                 <div class="clearfix"></div>
                                     </a>
