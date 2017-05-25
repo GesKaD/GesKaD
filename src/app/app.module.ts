@@ -7,6 +7,8 @@ import {LocationStrategy, HashLocationStrategy} from '@angular/common';
 
 import {ROUTES} from "./app.routes";
 import { AppComponent } from './app.component';
+//import { contactComponent } from './views/contact/contact.component';
+
 
 // App views
 import {AccueilModule} from "./views/Accueil/Acceuil.module";
@@ -24,7 +26,8 @@ import {LayoutsModule} from "./components/common/layouts/layouts.module";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+  //  contactComponent,
   ],
   imports: [
     // Angular modules
@@ -43,6 +46,7 @@ import {LayoutsModule} from "./components/common/layouts/layouts.module";
 
     // Modules
     LayoutsModule,
+    FormsModule,
 
     RouterModule.forRoot(ROUTES)
   ],

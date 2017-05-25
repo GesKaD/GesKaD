@@ -593,6 +593,8 @@ body.canvas-menu.mini-navbar nav.navbar-static-side {
 }
 @media (max-width: 768px) {
   .top-navigation .navbar-header {
+    margin-left: auto;
+    margin-right: auto;
     display: block;
     float: none;
   }
@@ -7408,10 +7410,14 @@ body.landing-page {
 }
 @media (max-width: 768px) {
   .landing-page .navbar .navbar-header {
+    margin-left: auto;
+    margin-right: auto;
     display: block;
     float: none;
   }
   .landing-page .navbar .navbar-header .navbar-toggle {
+    margin-left: auto;
+    margin-right: auto;
     background-color: #ffffff;
     padding: 9px 10px;
     border: none;
@@ -7561,6 +7567,8 @@ body.rtls.top-navigation .navbar-toggle {
   margin-right: 15px;
 }
 .body-small.rtls.top-navigation .navbar-header {
+  margin-right: auto;
+  margin-left: auto;
   float: none;
 }
 body.rtls.top-navigation #page-wrapper {
@@ -7582,7 +7590,9 @@ body.rtls.body-small.fixed-sidebar.mini-navbar .navbar-static-side {
   margin-right: 0;
 }
 .body-small.rtls .navbar-header {
-  float: right;
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
 }
 body.rtls .navbar-top-links li:last-child {
   margin-left: 20px;
@@ -8464,7 +8474,9 @@ body.md-skin {
   }
   .navbar-header {
     display: inline;
-    float: left;
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
   }
   .sidebar-panel {
     z-index: 2;
