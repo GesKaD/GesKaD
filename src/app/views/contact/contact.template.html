@@ -8,44 +8,44 @@
     <form>
         <div class="form-group">
             <label for="RaisSoc">Raison Sociale :</label>
-            <input type="text" class="form-control" id="RaisSoc">
+            <input type="text" class="form-control" id="RaisSoc" [(ngModel)]="model.RaisSoc" name="RaisSoc">
         </div>
 
         <div class="form-group">
             <label for="Nom">Nom *:</label>
-            <input type="text" class="form-control" id="Nom" required>
+            <input type="text" class="form-control" id="Nom" required [(ngModel)]="model.Nom" name="Nom">
         </div>
 
         <div class="form-group">
             <label for="Prenom">Prénom :</label>
-            <input type="text" class="form-control" id="Prenom">
+            <input type="text" class="form-control" id="Prenom" [(ngModel)]="model.Prenom" name="Prenom">
         </div>
 
         <div class="form-group">
             <label for="TypeCom">Type de commerce *:</label>
-            <select class="form-control" id="TypeCom" required>
+            <select class="form-control" id="TypeCom" required [(ngModel)]="model.TypeCom" name="TypeCom">
                 <option *ngFor="let typ of TypeComs" [value]="typ">{{typ}}</option>
             </select>
         </div>
 
         <div class="form-group">
             <label for="Tel">Téléphone *:</label>
-            <input type="text" class="form-control" id="Tel" required>
+            <input type="text" class="form-control" id="Tel" required [(ngModel)]="model.Tel" name="Tel">
         </div>
 
         <div class="form-group">
             <label for="Email">Email *:</label>
-            <input type="text" class="form-control" id="Email" required>
+            <input type="text" class="form-control" id="Email" required [(ngModel)]="model.Email" name="Email">
         </div>
 
         <div class="form-group">
             <label for="CPVille">CP + Ville *:</label>
-            <input type="text" class="form-control" id="CPVille" required>
+            <input type="text" class="form-control" id="CPVille" required [(ngModel)]="model.CPVille" name="CPVille">
         </div>
 
         <div class="form-group*">
             <label for="Texte">Votre demande *:</label>
-            <textarea class="form-control" rows="4"></textarea>
+            <textarea class="form-control" rows="4" [(ngModel)]="model.Texte" name="Texte"></textarea>
         </div>
     </form>
 </div>
